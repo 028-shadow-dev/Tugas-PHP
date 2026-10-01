@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    1
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nilai Siswa</title>
@@ -10,10 +11,10 @@
     $nama = "Rakha";
     $kelas = "XI RPL 1";
     $nilai = 75;
-    $nilaiUTS = 50;
+    $nilaiUTS = 80;
     $nilaiUAS = 80;
 
-    $nilaiTotal = ($nilai + $nilaiUTS + $nilaiUAS) / 3;
+    $nilaiTotal = ($nilai*0.30)+($nilaiUTS*0.30)+($nilaiUAS*0.40);
 
     if ($nilaiTotal >= 90) {
         $predikat = "A";
@@ -43,6 +44,5 @@
     Nilai Total: <?php echo $nilaiTotal; ?><br>
     Predikat: <?php echo $predikat; ?><br>
     Status: <?php echo $status; ?><br>
-    
 </body>
 </html>
